@@ -134,7 +134,7 @@ class EstructuraPostres:
         print(f"\nPostre '{nombre}' y su lista de ingredientes han sido dados de baja exitosamente.")
 
     def eliminar_repetidos(self):
-        """Subprograma para eliminar de manera automatica los postres repetidos[cite: 3]."""
+        """Subprograma para eliminar de manera automatica los postres repetidos."""
         if len(self.postres) <= 1:
             print("\nEl catalogo tiene 0 o 1 elemento, no hay repetidos posibles.")
             return
@@ -152,7 +152,7 @@ class EstructuraPostres:
             else:
                 i += 1
                 
-        print(f"\nProceso finalizado. Se eliminaron {eliminados} postres repetidos[cite: 3].")
+        print(f"\nProceso finalizado. Se eliminaron {eliminados} postres repetidos.")
 
     def mostrar_catalogo(self):
         if not self.postres:
